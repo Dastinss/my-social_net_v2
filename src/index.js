@@ -35,7 +35,7 @@ rerenderEnrireTree( store.getState() ); // тут не бандим bind, пос
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-store.subscriber( () => {
+store.subscribe( () => {
     let state = store.getState();
     rerenderEnrireTree(state);
 } );
